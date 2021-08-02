@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       .topnav
+       {
+           /*dimensions*/
+          height: 131px; 
+          width: 100%;
+           /*position*/
+            position: sticky;
+           top: 0%;
+            /*display*/
+            background-color: #000000;
+            z-index: 2;
+       }
+       .topnav > a 
+       {
+           text-decoration: none;
+           font-size: 18px;
+           font-family: 'Roboto';
+           line-height: 21.09px;
+           position: absolute;
+           color: #e5e5e5;
+       }
+       #dropdown
+       {
+           height: ;
+           width: ;
+           background-color: #c9c9c9;
+       }
+         .dropdown-content
+       {
+           display: none;
+       }
+       .dropdown-content:hover
+       {
+           display: block;
+       }
+       .caret
+       {
+        height: 10;
+        width: 0;
+        border-top:8px  solid #e5e5e5 ;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        position: absolute;
+        margin-top: -14px;
+        margin-left:85px;
+       }
+       .block1
+       {
+           height: 722px;
+           width: 100%;
+           background-color:#000000 ;
+           position: relative;
+       }
+       .block11
+       {
+           height: 721px;
+           width: 746px;
+            position: absolute;
+            background-image: url(animations.png);
+            margin-left:347px ;
+       }
+       .block2
+       {
+           height: 693px;
+           width: 100%;
+           position: relative;
+           background-color: white;
+       }
+       @keyframes example{
+           0%{top: 5%;opacity: 0;}
+           10%{top: 0%;opacity: 1;}
+          
+           90%{top: 0%;opacity: 1;}
+           100%{top: -5%;opacity: 0;}
+       }
+       .block21
+       {
+           /*dimensions*/
+           height:135px ;
+           width: 558px;
+           /*positions and margins*/
+           position: absolute;
+           margin: 139px 436px 414px 446px;
+           /*fonts and background*/
+           font-size: 100px;
+           font-family: 'Cinzel';
+           font-weight: 400;
+           background-color: transparent;
+           animation-name: example;
+           animation-timing-function: linear;
+           animation-duration: 18s;
+           animation-iteration-count: 2;
+           animation-direction: normal;
+            z-index: 0;
+
+       }
+       .block22
+       {
+           /*dimensions*/
+           height: 164px;
+           width: 344px;
+           /*positions and margins*/
+           position: absolute;
+           margin: 218px 451px 306px 645px;
+           /*fonts and background*/
+           font-size: 100px;
+           font-family: 'MoonTime';
+           font-weight: 400;
+           background-color:transparent ;
+           animation-name: example;
+           animation-timing-function: linear;
+           animation-duration: 18s;
+           animation-iteration-count: infinite;
+           animation-direction: normal;
+           animation-delay: 0.5s;
+            z-index: 0;
+        }
+        .block23
+        {
+            /*dimensions*/
+           height: 196px;
+           width: 731px;
+           /*positions and margins*/
+           position: absolute;
+           margin: 344px 333px 148px 376px;
+           /*fonts and background*/
+           font-size: 24px;
+           font-family: 'Roboto';
+           font-weight: 400;
+           background-color: inherit;
+           animation-name: example;
+           animation-timing-function: linear;
+           animation-duration: 18s;
+           animation-iteration-count: infinite;
+           animation-direction: normal;
+           animation-delay: 0.75s;
+            z-index: 0;
+        }
+        .block3
+        {
+            /*dimensions*/
+           height: 747px;
+           width: 100%;
+           /*positions and margins*/
+           position: relative;
+           margin: none;
+           /*fonts and background*/
+           font-size: ;
+           font-family: ;
+           font-weight: ;
+           background-image:url(summers.png) ;
+           background-size: cover;
+           background-repeat: no-repeat;
+        }
+        .block31
+        {
+            /*dimensions*/
+           height:63px ;
+           width: 184px;
+           /*positions and margins*/
+           position: absolute;
+           margin: 607px 631px 77px 626px;
+           /*fonts and background*/
+           font-size:18px ;
+           font-family: 'Larken-Light';
+           font-weight: 300;
+           background-color:white ;
+           z-index: 1;
+           text-align: center;
+        }
+        .block311
+        {
+            height:20px ;
+            width: auto;
+            position: absolute;
+            margin-top:19px ;
+            margin-left: 44px;
+            background-color: transparent;
+            font-size: 18px;
+            font-family: 'Larken-light';
+            font-weight: 300;
+            color: #000000;
+        }
+        .block4
+        {
+            /*dimensions*/
+           height: 747px;
+           width: 100%;
+           /*positions and margins*/
+           position: absolute;
+           margin: 0;
+           /*fonts and background*/
+           font-size: ;
+           font-family: ;
+           font-weight: ;
+           background-color: white;
+           
+        }
+        .block41
+        {
+            /*dimensions*/
+           height:747px ;
+           width: 492px;
+           /*positions and margins*/
+           position: absolute;
+           margin-left:0px ;
+           /*fonts and background*/
+           font-size: ;
+           font-family: ;
+           font-weight: ;
+           background-image:url(hm.png) ;
+           background-repeat: no-repeat;
+           animation-name: heavy;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes heavy {
+            0%{top: 3%;opacity: 0;}
+            7%{top: 0%;opacity: 1;}
+            100%{top: 0%;opacity: 1;}
+        }
+        .block42
+        {
+            /*dimensions*/
+           height:135px ;
+           width: 558px;
+           /*positions and margins*/
+           position: absolute;
+           margin: 108px 201px 487px 682px;
+           /*fonts and background*/
+           font-size: 100px;
+           font-family: 'Cinzel';
+           font-weight: 400;
+           background-color: white;
+           color: #000000;
+            line-height: 134.3px;
+            animation-name:hard ;
+            animation-duration: 21s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes hard {
+            0%{top: 5%;opacity: 0;}
+            7%{top: 0%;opacity: 1;}
+            100%{top: 0%;opacity: 1;}
+        }
+        .block43
+        {
+            /*dimensions*/
+           height: 164px;
+           width: 344px;
+           /*positions and margins*/
+           position: absolute;
+           margin: 195px 216px 371px 881px;
+           /*fonts and background*/
+           font-size: 100px;
+           font-family: 'MoonTime';
+           font-weight: 400;
+           background-color:transparent;
+           color: #000000;
+           text-align: center;
+           animation-name:hard ;
+            animation-duration: 21s;
+            animation-iteration-count: infinite;
+            
+        }
+        .block44
+        {
+            /*dimensions*/
+           height: auto;
+           width: 565px;
+           /*positions and margins*/
+           position: absolute;
+           margin-top:309px ;
+           margin-left: 640px;
+           /*fonts and background*/
+           font-size: 24px;
+           font-family: 'Roboto';
+           font-weight: 400;
+           background-color:white ;
+           text-align: justify;
+           line-height: 28.13px;
+           animation-name:hard ;
+            animation-duration: 21s;
+            animation-iteration-count: infinite;
+            
+        }
+        .block5
+        {
+            height: 140px;
+            width: 100%;
+            background-color: #000000;
+            position:relative;
+            top: 717.0px;
+        }
+   </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <img src="image 1.png" alt="" style="margin-top: 17px;margin-left: 49px;">
+        <a href="#" style="margin-left: 649px;margin-top: 60px;">HOME</a>
+        <a href="#" style="margin-top:60px ;margin-left: 749px;">BLOG</a>
+        <a href="#" style="margin-top: 60px;margin-left: 849px;">SERVICES<div class="caret"></div></a>
+        <a href="#" style="border: 3px solid #e5e5e5;margin-top: 50px;margin-left: 999px;padding: 10px ;">CONTACT US</a>
+    </div>
+    <div class="block1">
+        <div class="block11"></div>
+    </div>
+    <div class="block2">
+        <div class="block21">ABOUT</div>
+        <div class="block22">Brand</div>
+        <div class="block23">As experts in the business of luxury, Our Agency ensure deliveries of end-to-end services from brand launch to sustainability, all under one roof. So, if you are vying for the success of your brand and be a name that resonates with your buyers</div>
+    </div>
+    <div class="block3">
+        <div class="block31"> <div class="block311">VIEW MORE</div>
+            </div>
+    </div>
+    <div class="block4">
+        <div class="block41"></div>
+        <div class="block42">ABOUT</div>
+        <div class="block43">Founder</div>
+        <div class="block44"><br>
+            A connoisseur of all things luxurious and passionate about the business of luxury, Harsh Mann, has cultivated deep insights on evolving industry trends across the world.<br>
+            And his in-depth knowledge and understanding of 25 different world cultures, make him a keen observer of new challenges, current movements and foresee the future trends of the Indian luxury market.
+        </div>
+    </div>
+    <br><div class="block5"></div>
+</body>
+</html>
